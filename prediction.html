@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Disease Details</title>
+	<style>
+div {
+  background-color: #e0e8ff;
+  background-position: center;
+  width: 500px;
+  border: 15px red;
+  padding: 50px;
+  margin: 70px;
+}
+.center {
+
+	margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 70%;
+  border: 3px solid #73AD21;
+  padding: 45px 0;;
+}
+body {
+  background-image: url("https://etimg.etb2bimg.com/photo/77373028.cms");
+  background-repeat: no-repeat;
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+mark {
+  background-color: yellow;
+  color: black;
+}
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+  background-color: yellow;
+  text-decoration: none;
+}
+h1 {text-align: center;}
+</style>
+</head>
+<body background:"https://etimg.etb2bimg.com/photo/77373028.cms">
+    	<div class="center">
+	<h1>Disease Details</h1>
+			<hr><p id="result" style="margin-left:2em;">You might have <mark>{{prediction_text}}</mark></p>
+			<hr><p style="margin-left:2em;">{{pred1}}</p>
+			<hr><p style="margin-left:2em;">You can visit a <mark>{{pred6}} </mark></p>
+			<hr><p style="margin-left:2em;">You have to take the following precautions </p>
+			<ul style="margin-left:2em;">
+				<li>{{pred2}}</li>
+				<li>{{pred3}}</li>
+				<li>{{pred4}}</li>
+				<li>{{pred5}}</li>
+			</ul>
+    		<hr><p style="margin-left:2em;">Your Severity of disease based on the symptoms is :{{ pred8 }} </p>
+			<hr><p style="margin-left:2em;">If you want to know more about this disease click on this link:<a href="{{pred7}}">Disease link</a>  </p>
+
+   	</div>
+</body>
+</html>
